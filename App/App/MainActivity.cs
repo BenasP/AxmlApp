@@ -35,14 +35,12 @@ namespace App
             // Load the rendered HTML into the view with a base URL 
             // that points to the root of the bundled Assets folder
             webView.LoadDataWithBaseURL("file:///android_asset/", page, "text/html", "UTF-8", null);
-
         }
 
         private class HybridWebViewClient : WebViewClient
         {
             public override bool ShouldOverrideUrlLoading(WebView webView, string url)
             {
-
                 // If the URL is not our own custom scheme, just let the webView load the URL as usual
                 var scheme = "hybrid:";
 
@@ -74,4 +72,3 @@ namespace App
         }
     }
 }
-
