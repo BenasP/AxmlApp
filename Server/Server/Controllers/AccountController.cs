@@ -26,8 +26,8 @@ namespace Server.Controllers
         private const string LocalLoginProvider = "Local";
         private ApplicationUserManager _userManager;
 
-        public AccountController()
-        {
+        public AccountController()           // no value, thust not needed
+        {                                      
         }
 
         public AccountController(ApplicationUserManager userManager,

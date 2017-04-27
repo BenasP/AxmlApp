@@ -36,14 +36,14 @@ namespace Server.Tests.Controllers
             ValuesController controller = new ValuesController();
 
             // Act
-            string result = controller.Get(5);
+            string result = controller.Get(9);
 
             // Assert
             Assert.AreEqual("value", result);
         }
 
         [TestMethod]
-        public void Post()
+        public void Post()              //not activated?
         {
             // Arrange
             ValuesController controller = new ValuesController();
@@ -61,7 +61,7 @@ namespace Server.Tests.Controllers
             ValuesController controller = new ValuesController();
 
             // Act
-            controller.Put(5, "value");
+            controller.Put(9, "value");
 
             // Assert
         }
@@ -73,7 +73,7 @@ namespace Server.Tests.Controllers
             ValuesController controller = new ValuesController();
 
             // Act
-            controller.Delete(5);
+            controller.Delete(9);
 
             // Assert
         }

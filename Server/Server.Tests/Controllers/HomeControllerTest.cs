@@ -8,14 +8,17 @@ namespace Server.Tests.Controllers
     [TestClass]
     public class HomeControllerTest
     {
+        
+
+        //bandomas testas nr.1
         [TestMethod]
-        public void Index()
+        public void WhatIsViewTest()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            var  controller = new HomeController();
 
             // Act
-            ViewResult result = controller.Index() as ViewResult;
+            var result = controller.WhatIsViewTest() as ViewResult;
 
             // Assert
             Assert.IsNotNull(result);
