@@ -77,5 +77,17 @@ namespace Server.Tests.Controllers
 
             // Assert
         }
+        [TestMethod]
+        public void TryingOutNewTest()
+        {
+            // Arrange
+            var controller = new ValuesController();
+
+            // Act
+            var result = controller.Equals(9);
+
+            // Assert
+            Assert.AreEqual("value", result);
+        }
     }
 }
